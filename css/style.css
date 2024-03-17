@@ -1,0 +1,56 @@
+:root {
+    --primary-color: #000000;
+    --secondary-color: #dadbf1;
+    --tertiary-color: #fff;
+    --quaternary-color: #4C5FD5;
+}
+
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* navbar mobile styles */
+
+#nav-mobile {
+    background-color: var(--primary-color);
+    width: 100%;
+}
+
+#nav-mobile > div {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+
+#brand-container {
+    width: 10rem;
+}
+
+#search-menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#search-menu-container > div {
+    width: 2rem;
+}
+
+img[src="imgs/brand.svg"] {
+    width: 100%;
+}
+
+img[src="imgs/assets/search_white_24dp.svg"] {
+    width: 100%;
+}
+
+img[src="imgs/assets/menu_white_24dp.svg"] {
+    width: 100%;
+}
