@@ -11,19 +11,22 @@ body {
 
 * {
     box-sizing: border-box;
+    font-family: sans-serif;
 }
+
 
 /* navbar mobile styles */
 
 #nav-mobile {
     background-color: var(--primary-color);
     width: 100%;
+    display: none;
 }
 
 #nav-mobile > div {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 1rem;
 }
@@ -45,12 +48,82 @@ body {
 
 img[src="imgs/brand.svg"] {
     width: 100%;
+    cursor: pointer;
 }
 
 img[src="imgs/assets/search_white_24dp.svg"] {
     width: 100%;
+    cursor: pointer;
 }
 
 img[src="imgs/assets/menu_white_24dp.svg"] {
     width: 100%;
+    cursor: pointer;
 }
+
+/* navbar desktop styles */
+
+#nav-desktop {
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    display: none;
+}
+
+#nav-desktop > div {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#login-request-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    gap: 1em;
+}
+
+#Submit-request {
+    text-decoration: none;
+    color: var(--tertiary-color);
+    font-size: larger;
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    padding: 0.5em 1em;
+}
+
+#sign-in {
+    text-decoration: none;
+    color: var(--tertiary-color);
+    font-size: larger;
+    border: 1px solid var(--quaternary-color);
+    border-radius: 8%;
+    background-color: var(--quaternary-color);
+    padding: 0.5em 1em;
+}
+
+#sign-in:hover {
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+}
+
+/* responsive navbar styles */
+
+@media only screen and (min-width: 1024px) {
+    #nav-desktop {
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 1023px)
+{
+    #nav-mobile {
+        display: flex;
+    }
+}
+
