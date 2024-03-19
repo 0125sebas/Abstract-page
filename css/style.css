@@ -127,3 +127,53 @@ img[src="imgs/assets/menu_white_24dp.svg"] {
     }
 }
 
+/* hero section */
+
+#hero-container {
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20rem;
+}
+
+#hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+
+#hero-title {
+    text-align: center;
+    width: 100%;
+}
+
+#hero-section > div {
+    max-width: 700px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+img[src="imgs/arrow-symbol.svg"] {
+    width: 2em;
+    position: absolute;
+    right: 0.5em;
+}
+
+#search {
+    width: 100%;
+    padding: 1em;
+    outline: none;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    font-size: larger;
+}
+
+
+
