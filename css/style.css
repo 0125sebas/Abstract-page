@@ -107,10 +107,13 @@ img[src="imgs/assets/menu_white_24dp.svg"] {
     padding: 0.5em 1em;
 }
 
-#sign-in:hover {
-    background-color: var(--tertiary-color);
-    color: var(--primary-color);
+@media (hover: hover) {
+    #sign-in:hover {
+        background-color: var(--tertiary-color);
+        color: var(--primary-color);
+    }
 }
+
 
 /* responsive navbar styles */
 
@@ -174,6 +177,56 @@ img[src="imgs/arrow-symbol.svg"] {
     border-radius: 4px;
     font-size: larger;
 }
+
+/* information section styles */
+
+#information-container {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+    padding: 5rem 0;
+}
+
+#information-container > section {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr;
+    gap: 1em;
+    width: 100%;
+}
+
+
+.image-container > img {
+    width: 100%;
+}
+
+.content-container > p {
+    font-size: 1.5rem;
+}
+
+.content-container > a {
+    text-decoration: none;
+    display: block;
+    font-size: 1.2rem;
+}
+
+@media (hover: hover) {
+    .content-container > a:hover {
+        text-decoration: underline;
+    }
+}
+
+/* responsive information section styles */
+
+@media only screen and (min-width: 1024px) {
+    #information-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
 
 
 
