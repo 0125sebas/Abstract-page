@@ -1,0 +1,201 @@
+@charset "UTF-8";
+/* CSS reset */
+:root {
+    --black: #000000;
+    --grey: #dadbf1;
+    --white: #fff;
+    --blue: #4C5FD5;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 0; */
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: sans-serif;
+    vertical-align: baseline;
+}
+
+img, svg {
+    display: block;
+    width: 100%;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+}
+
+p a {
+    display: inline-block;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+h1, h2, h3, h4, h5, h6, p, span, a {
+    font-size: 1em;
+    font-weight: inherit;
+    font-style: inherit;
+    color: inherit;
+}
+
+/* general navbar styles */
+
+.nav {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    background-color: var(--black);
+    font-size: 12px
+}
+
+/* navbar mobile styles */
+
+
+.nav__nav--mobile {
+    flex-direction: column;
+}
+
+.nav__div {
+    width: 90%;
+    margin: auto;
+    padding: 1em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__div--picture-container {
+    width: auto;
+    height: auto;
+}
+
+.nav__img--brand {
+    cursor: pointer;
+    width: 12em;
+}
+
+.nav__menu {
+    width: 3.5em;
+    cursor: pointer;
+}
+
+.menu--close {
+    display: none; /* by default */
+}
+
+.nav__span--dropdown-menu {
+    display: none; /* by default */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2.5em 0;
+    gap: 1em;
+    color: var(--grey);
+    position: relative;
+}
+
+.nav__a {
+    font-size: 2em;
+}
+
+.nav__a:active {
+    color: var(--white);
+}
+
+.nav__hr {
+    width: 60%;
+}
+
+/* navbar desktop styles */
+
+.nav__nav--desktop {
+    display: none; /* by default */
+    justify-content: center;
+    align-items: center;
+    color: var(--grey);
+}
+
+.nav__ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.nav__link {
+    color: var(--grey);
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 0.8em 1.5em;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.link--sign-in {
+    background-color: var(--blue);
+    border-color: var(--blue);
+}
+
+.link--sign-in:active {
+    background-color: var(--white);
+    border-color: var(--white);
+    color: var(--black);
+}
+
+/* responsive design */
+
+@media (hover: hover) {
+    .link--sign-in:hover {
+        background-color: var(--white);
+        border-color: var(--white);
+        color: var(--black);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .nav__nav--desktop {
+        display: block;
+    }
+
+    .nav__nav--mobile {
+        display: none;
+    }
+}
+
+/* TODO: MAKE THE HERO SECTION HERE */
+
+/* hero section */
+
+
+/* created by sebastian niño lopez from www.frontendpractice.com :) */
+
+
+
+
+
+
+
+
+
+
+
