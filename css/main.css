@@ -13,6 +13,8 @@ html {
 
 body {
     min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
     font-size: 100%;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -20,7 +22,6 @@ body {
 * {
     margin: 0;
     padding: 0;
-    /* border: 0; */
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     font-family: sans-serif;
@@ -53,13 +54,6 @@ h1, h2, h3, h4, h5, h6, p, span, a {
     font-weight: inherit;
     font-style: inherit;
     color: inherit;
-}
-
-main {
-    width: 100%;
-    position: absolute;
-    top: 65px;
-    left: 0;
 }
 
 /* general navbar styles */
@@ -267,8 +261,62 @@ main {
 
 /* footer styles */
 
-/* TODO: MAKE THE STYLES HERE */
+.footer {
+    width: 100%;
+    padding: 3em 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    background-color: var(--black);    
+}
 
+.footer__div {
+    width: 90%;
+    margin: auto;
+    display: grid;
+}
+
+.div--contact {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2em;
+}
+
+.div--copyright {
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    gap: 1em;
+    color: var(--white);
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.footer__img--copyright {
+    width: 8em;
+    cursor: pointer;
+}
+
+.footer__ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.footer__title {
+    color: var(--white);
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.footer__link {
+    color: var(--white);
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.footer__link:active {
+    color: var(--grey);
+}
 
 /* responsive design */
 
@@ -282,6 +330,11 @@ main {
     .section__link:hover {
         text-decoration: underline var(--blue);
     }
+
+    .footer__link:hover {
+        text-decoration: underline var(--white);
+    }
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -295,10 +348,7 @@ main {
 }
 
 
-
-
-
-/* created by sebastian niño lopez from www.frontendpractice.com :) */
+/* created by sebastian niño lópez from www.frontendpractice.com :) */
 
 
 
