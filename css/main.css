@@ -55,6 +55,13 @@ h1, h2, h3, h4, h5, h6, p, span, a {
     color: inherit;
 }
 
+main {
+    width: 100%;
+    position: absolute;
+    top: 65px;
+    left: 0;
+}
+
 /* general navbar styles */
 
 .nav {
@@ -63,6 +70,7 @@ h1, h2, h3, h4, h5, h6, p, span, a {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 1;
     display: flex;
     background-color: var(--black);
     font-size: 12px
@@ -162,6 +170,106 @@ h1, h2, h3, h4, h5, h6, p, span, a {
     color: var(--black);
 }
 
+/* main styles */
+
+.div {
+    width: 100%;
+    height: 20em;
+    background-color: var(--grey);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.div__title {
+    font-size: 2em;
+}
+
+.div__search--container {
+    width: 90%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.div__search--input {
+    width: 100%;
+    font-size: 1.2em;
+    color: var(--black);
+    padding: 0.8em;
+    outline: none;
+    border: 1px solid var(--black);
+    border-radius: 5px;
+}
+
+.div__search--arrow {
+    width: 2em;
+    position: absolute;
+    right: 5px;
+    top: 10px;
+}
+
+.div__section {
+    width: 90%;
+    margin: auto;
+    padding: 5em 0;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 2.5em;
+}
+
+.section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto;
+    gap: 1em;
+}
+
+.section__div {
+    display: grid;
+}
+
+.div--content {
+    gap: 1em;
+}
+
+.section__picture {
+    width: 4em;
+    height: auto;
+}
+
+.section__title {
+    width: 100%;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: var(--black);
+}
+
+.section__text {
+    width: 100%;
+    font-size: 1.2em;
+}
+
+
+.section__link {
+    width: 100%;
+    font-size: 1.2em;
+    color: var(--blue);
+}
+
+.section__link:active {
+    color: var(--grey);
+}
+
+/* footer styles */
+
+/* TODO: MAKE THE STYLES HERE */
+
+
 /* responsive design */
 
 @media (hover: hover) {
@@ -169,6 +277,10 @@ h1, h2, h3, h4, h5, h6, p, span, a {
         background-color: var(--white);
         border-color: var(--white);
         color: var(--black);
+    }
+
+    .section__link:hover {
+        text-decoration: underline var(--blue);
     }
 }
 
@@ -182,9 +294,8 @@ h1, h2, h3, h4, h5, h6, p, span, a {
     }
 }
 
-/* TODO: MAKE THE HERO SECTION HERE */
 
-/* hero section */
+
 
 
 /* created by sebastian niño lopez from www.frontendpractice.com :) */
