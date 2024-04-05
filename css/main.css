@@ -183,6 +183,7 @@ h1, h2, h3, h4, h5, h6, p, span, a {
 
 .div__search--container {
     width: 90%;
+    max-width: 640px;
     display: flex;
     position: relative;
     justify-content: center;
@@ -201,8 +202,8 @@ h1, h2, h3, h4, h5, h6, p, span, a {
 .div__search--arrow {
     width: 2em;
     position: absolute;
-    right: 5px;
-    top: 10px;
+    right: 0.5em;
+    top: 0.5em;
 }
 
 .div__section {
@@ -219,7 +220,7 @@ h1, h2, h3, h4, h5, h6, p, span, a {
     width: 100%;
     display: grid;
     grid-template-columns: auto 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: 1fr;
     gap: 1em;
 }
 
@@ -250,7 +251,8 @@ h1, h2, h3, h4, h5, h6, p, span, a {
 
 
 .section__link {
-    width: 100%;
+    width: 5.5em;
+    height: 1em;
     font-size: 1.2em;
     color: var(--blue);
 }
@@ -318,7 +320,18 @@ h1, h2, h3, h4, h5, h6, p, span, a {
     color: var(--grey);
 }
 
-/* responsive design */
+/*
+
+responsive design:
+
+common breakpoints:
+
+-smaller smartphones: 0-480px
+-tablets and larger smartphones: 481-768px
+-laptops, larger tablets in landscape, and small desktops: 769-1279px
+-larger desktops and monitors: 1280px+
+
+*/
 
 @media (hover: hover) {
     .link--sign-in:hover {
@@ -337,6 +350,22 @@ h1, h2, h3, h4, h5, h6, p, span, a {
 
 }
 
+@media screen and (min-width: 640px) {
+    .div__section {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    .div--contact {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+
+    .div--copyright {
+        justify-content: end;
+    }
+}
+
 @media screen and (min-width: 1024px) {
     .nav__nav--desktop {
         display: block;
@@ -345,11 +374,25 @@ h1, h2, h3, h4, h5, h6, p, span, a {
     .nav__nav--mobile {
         display: none;
     }
+
+    .div {
+        height: 25em;
+    }
+
+    .div__title {
+        font-size: 3em;
+    }
+
+    .div--contact {
+        grid-template-columns: auto auto auto auto auto;
+        grid-template-rows: auto;
+    }
+
+    .div__section {
+        width: 80%;
+        padding: 10em 0;
+    }
 }
-
-
-/* created by sebastian niño lópez from www.frontendpractice.com :) */
-
 
 
 
